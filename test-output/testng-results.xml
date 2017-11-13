@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7203" started-at="2017-11-12T07:34:03Z" finished-at="2017-11-12T07:34:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7203" started-at="2017-11-12T07:34:03Z" finished-at="2017-11-12T07:34:10Z">
+      <class name="seleniumtraning.testing">
+        <test-method status="PASS" signature="main()[pri:0, instance:seleniumtraning.testing@68be2bc2]" name="main" duration-ms="7157" started-at="2017-11-12T13:04:03Z" finished-at="2017-11-12T13:04:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+      </class> <!-- seleniumtraning.testing -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
