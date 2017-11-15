@@ -25,7 +25,6 @@ public class testing {
 		fileinput= new FileInputStream(file);
 		 prop=new Properties();
 		prop.load(fileinput);
-		shobhit
 				
 	}
 	@BeforeTest
