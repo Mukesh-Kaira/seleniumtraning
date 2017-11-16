@@ -2,15 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7203" started-at="2017-11-12T07:34:03Z" finished-at="2017-11-12T07:34:10Z">
+  <suite name="Default suite" duration-ms="13939" started-at="2017-11-16T04:57:30Z" finished-at="2017-11-16T04:57:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7203" started-at="2017-11-12T07:34:03Z" finished-at="2017-11-12T07:34:10Z">
+    <test name="Default test" duration-ms="13939" started-at="2017-11-16T04:57:30Z" finished-at="2017-11-16T04:57:44Z">
       <class name="seleniumtraning.testing">
-        <test-method status="PASS" signature="main()[pri:0, instance:seleniumtraning.testing@68be2bc2]" name="main" duration-ms="7157" started-at="2017-11-12T13:04:03Z" finished-at="2017-11-12T13:04:10Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:seleniumtraning.testing@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2017-11-16T10:27:30Z" finished-at="2017-11-16T10:27:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- main -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="browser_launch()[pri:0, instance:seleniumtraning.testing@4678c730]" name="browser_launch" is-config="true" duration-ms="4547" started-at="2017-11-16T10:27:30Z" finished-at="2017-11-16T10:27:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser_launch -->
+        <test-method status="PASS" signature="get_url()[pri:0, instance:seleniumtraning.testing@4678c730]" name="get_url" duration-ms="9047" started-at="2017-11-16T10:27:34Z" finished-at="2017-11-16T10:27:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_url -->
+        <test-method status="PASS" signature="browser_closed()[pri:0, instance:seleniumtraning.testing@4678c730]" name="browser_closed" is-config="true" duration-ms="313" started-at="2017-11-16T10:27:43Z" finished-at="2017-11-16T10:27:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser_closed -->
       </class> <!-- seleniumtraning.testing -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -1,0 +1,7 @@
+<suite name= "Seltraining">
+<test name="testng">
+<classes>
+<class name="seleniumtraning.testing"/>
+</classes>
+</test>
+</suite>	

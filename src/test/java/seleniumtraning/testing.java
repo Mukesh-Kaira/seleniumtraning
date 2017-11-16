@@ -9,6 +9,8 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -27,18 +29,18 @@ public class testing {
 		prop.load(fileinput);
 				
 	}
-	@BeforeTest
-	public void browser()
+	@BeforeClass
+	public void browser_launch()
 	{
 		String br=prop.getProperty("Browser");
-		if(br=="firefox")
+		if(br.equals("firefox"))
 		{
-		;
+		
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\mukesh.kaira\\workspace\\seleniumtraning\\src\\executable\\geckodriver.exe");
 		
 		driver= new FirefoxDriver();
 		}
-		else if (br=="chrome")
+		else if (br.equals("chrome"))
 		{
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\mukesh.kaira\\workspace\\seleniumtraning\\src\\executable\\chromedriver.exe");
 		
@@ -47,6 +49,17 @@ public class testing {
 		
 		
 		
+	}
+	@Test
+	public void get_url()
+	{
+		driver.get("http://10.10.2.48:8080/agent/");
+	}
+	
+	@AfterClass
+	public void browser_closed()
+	{
+	  driver.close();	
 	}
 	
 	
