@@ -20,6 +20,7 @@ public class testing {
 	Properties prop;
 	WebDriver driver;
 	FileInputStream fileinput;
+	
 	@BeforeSuite
 	public void setup() throws IOException
 	{
@@ -29,6 +30,7 @@ public class testing {
 		prop.load(fileinput);
 				
 	}
+	
 	@BeforeClass
 	public void browser_launch()
 	{
@@ -50,10 +52,11 @@ public class testing {
 		
 		
 	}
+	
 	@Test
 	public void get_url()
 	{
-		driver.get("http://10.10.2.48:8080/agent/");
+		driver.get(prop.getProperty("url"));
 	}
 	
 	@AfterClass
